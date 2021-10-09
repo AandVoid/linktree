@@ -1,0 +1,103 @@
+html {
+    background-image: linear-gradient(#1F181E, #BF432B);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #BF432B;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(#1F181E, #BF432B);
+    background-size: 100%;
+}
+
+.page {
+    position: absolute;
+    z-index: 100;
+    background-image: url("../images/gueixa.png");
+    min-height: 100%;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 500px;
+}
+
+.blur {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.55), rgb(0, 0, 0, 0.0));
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.page-header .logo {
+    margin-bottom: 28px;
+}
+
+.container {
+    z-index: 100;
+    padding: 32px 5%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, p {
+    color: #f8f8f8;
+    font-family: 'Roboto Light';
+    text-align: center;
+    font-weight: 200;
+    margin: 4px 0;
+}
+
+h1 {font-size: 1.4em;}
+
+h2 {font-size: 0.9em;}
+
+h3 {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+h4 {font-size: 1.2em;}
+
+p {font-size: 0.8em;}
+
+
+
+.card-link {
+    padding: 16px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 500px;
+    border-radius: 24px;
+    background-color: rgb(0, 0, 0, 0.25);
+    margin-bottom: 8px;
+}
+
+.card-link:hover {
+    background-color: rgb(0, 0, 0, 0.35);
+    transition: 0.256s;
+    cursor: pointer;
+}
