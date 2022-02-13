@@ -1,109 +1,138 @@
 html {
-    background-image: linear-gradient(#1F181E, #BF432B);
     background-size: 100%;
     background-repeat: no-repeat;
     min-height: 100vh;
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: #BF432B;
+}
+
+
+
+body {
+    padding: 0;
+    padding-bottom: 50px;
+    margin: 0;
+    background-image: url("../images/thor-bg.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    color: #333;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.4em;
+    margin-bottom: 4px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.0em;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 0.8em;
 }
 
 a {
     margin: 0;
-    padding: 0;
+    padding: 0 16px;
+    border-radius: 50px;
+    color: white;
+    background-color: #4D7AD9;
+    text-decoration: none;
+    box-sizing: border-box;
+    white-space: nowrap;
+    line-height: 36px;
+    height: 36px;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    background-image: linear-gradient(#1F181E, #BF432B);
-    background-size: 100%;
+a:hover {
+    background-color: #7594d6;
 }
 
-.page {
-    position: absolute;
-    z-index: 100;
-    background-image: url("../images/gueixa.png");
-    min-height: 100%;
-    width: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 500px;
-    
+.container  {
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    max-width: 450px;
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 16px 0px #00000029;
+    box-shadow: 0px 0px 4px 0px #00000029;
+
 }
 
-.blur {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgb(0, 0, 0, 0.0));
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-    
-}
-
-.page-header {
+.container .page-header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 32px;
+    border-bottom: 1px solid #C4C4C4;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
 }
 
-.page-header .logo {
-    margin-bottom: 28px;
+.container .page-header .avatar {
+    margin-right: 16px;
+    height: fit-content;
 }
 
-.container {
-    z-index: 100;
-    padding: 32px 5%;
-    margin: 0 5%;
+.container .page-header .header-actions {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
 }
 
-h1, h2, h3, h4, p {
-    color: #f8f8f8;
-    font-family: 'Roboto Light', sans-serif;
+.container .page-header .header-actions > a {
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+
+.container .cover-letter {
     text-align: center;
-    font-weight: 400;
-    margin: 4px 0;
+    margin-bottom: 40px;
 }
 
-h4 {
-    font-family: 'Roboto', sans-serif;
-}
-
-h1 {font-size: 1.4em;}
-
-h2 {font-size: 0.9em;}
-
-h3 {
-    font-size: 0.8em;
-    font-style: italic;
-}
-
-h4 {font-size: 1.2em;}
-
-p {font-size: 0.8em;}
-
-
-
-.card-link {
-    padding: 16px;
-    width: 100%;
-    min-width: 320px;
-    max-width: 500px;
-    border-radius: 24px;
-    background-color: rgb(0, 0, 0, 0.55);
+.container .cover-letter > h4 {
     margin-bottom: 8px;
-    
 }
 
-.card-link:hover {
-    background-color: rgb(0, 0, 0, 0.65);
-    transition: 0.256s;
-    cursor: pointer;
+.container .cover-letter > h3 {
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.container .card {
+    padding: 20px;
+    background-color: #ECECEC;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 8px;
+}
+
+.container .card h1, .container .card h2 {
+    text-transform: uppercase;
+}
+
+.container .card a {
+    margin-top: 16px;
+    max-width: 160px;
+    width: 100%;
+    line-height: 48px;
+    height: 48px;
 }
