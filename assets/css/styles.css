@@ -145,3 +145,11 @@ a:hover {
     line-height: 48px;
     height: 48px;
 }
+
+@media only screen and (max-width: 600px) {
+    .container .page-header .avatar {
+        margin-right: 16px;
+        height: 90px;
+        width: 90px;
+    }
+  }
