@@ -13,13 +13,18 @@ body {
     padding: 0;
     padding-bottom: 50px;
     margin: 0;
+    background-color: #AD4444;
     background-image: url("../images/thor-bg.jpg");
-    background-size: 100%;
+    background-size: initial;
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
+    
 }
 
+.page {
+    
+}
 
 h1, h2, h3, h4, p {
     margin: 0;
@@ -86,10 +91,14 @@ a:hover {
     height: fit-content;
 }
 
+.container .page-header .profile-data {
+    padding: 8px 0;
+}
+
 .container .page-header .header-actions {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 16px;
+    margin-top: 8px;
 }
 
 .container .page-header .header-actions > a {
