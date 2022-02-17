@@ -60,6 +60,14 @@ a {
     height: 36px;
 }
 
+a.red {
+    background-color: #FF0000;
+}
+
+a.red:hover {
+    background-color: #ee4141;
+}
+
 a:hover {
     background-color: #7594d6;
 }
