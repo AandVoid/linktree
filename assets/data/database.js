@@ -17,7 +17,7 @@ const language = {
     "portuguese": {
         "language": "portuguese",
         "title": "AndVøid",
-        "email": "aandvoid@gmail.com1",
+        "email": "aandvoid@gmail.com",
         "role": "Artista Digital Brasileiro",
         "roleDescription": "Eu trabalho com uma mistura de estilos: ukiyo-e, quadrinhos e arte de rua",
         "portfolioAction": "Ver portfólio",

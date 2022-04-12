@@ -1,9 +1,9 @@
 var userLanguage = window.navigator.userLanguage || window.navigator.language;
 
-console.log(userLanguage);
+// console.log(userLanguage);
 
 // Start
-window.onload = () => populatePage();
+window.onload = () => populatePage(userLanguage);
 
 
 //Copy Email
@@ -16,18 +16,26 @@ function myFunction() {
 
 function outFunc() {
     var tooltip = document.getElementById("commission-action");
-    setTimeout(() => { tooltip.innerHTML = language.english.commissionAction; }, 2000);
+    setTimeout(() => { tooltip.innerHTML = populatePage(userLanguage).commissionAction; }, 2000);
 }
 
-function accessStore(url) {
+function accessLink(url) {
     window.open(url, '_blank').focus();
 }
 
 
 function populatePage(userLanguage){
-    userLanguage != "pt-BR" ?
-    printData(language.english) : 
-    printData(language.portuguese)  
+
+    console.log(userLanguage)
+
+    if (userLanguage != 'pt-BR') {
+        printData(language.english)
+        return language.english
+    }else {
+        printData(language.portuguese)  
+        return language.portuguese
+    }
+    
 }
 
 function printData(language){
