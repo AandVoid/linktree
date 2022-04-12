@@ -20,38 +20,32 @@
           <div class="profile-data">
             <h1>AndVøid</h1>
             <h2>@aand.void</h2>
-            <h2>aandvoid@gmail.com</h2>
-            <div class="header-actions">
-              <a href="https://www.artstation.com/andvoid" target="_blank">View portfolio</a>
-              <a class="red" href="https://www.youtube.com/channel/UCz1IT9-TLF7RUXXYc0465Fg" target="_blank">YouTube</a>
-            </div>
+            <h2 id="email"></h2>
+            
           </div>
         </header>
 
         <div class="cover-letter">
-          <h3>English</h3>
-          <h4>Digital artist from Brazil</h4>
-          <p>I work with a mix of ukiyo-e, comic book and street art styles</p>
+          <h4 id="role"></h4>
+          <p id="role-description"></p>
+          <a href="https://www.artstation.com/andvoid" target="_blank" id="portfolio-action"></a>
+          
+          <input type="text" value= "{() => language.email}" id="myInput" style="display: none;">
+          <a class="secondary" onclick="myFunction()" onmouseout="outFunc()" id="commission-action"></a>
         </div>
-
-        <!-- <div class="cover-letter">
-          <h3>Português - Brasil</h3>
-          <h4>Artista digital brasileiro</h4>
-          <p>Trabalho com uma mistura dos estilos: ukiyo-e, quadrinhos e arte de rua</p>
-        </div> -->
 
         
 
-        <div class="card">
-          <h1>Loja online</h1>
-          <h2>Online store (delivery for Brazil only)</h2>
-          <a href="https://www.andvoid.store/loja" target="_blank">Acessar loja</a>
+        <div class="card" onclick=accessStore("https://andvoid-store.creator-spring.com/")>
+          <h1 id="spring-store-title"></h1>
+          <h2 id="spring-store-subtitle"></h2>
+          <h3 id="spring-store-description"></h3>
         </div>
 
-        <div class="card">
-          <h1>Commissions open</h1>
-          <h2>Encomendas digitais disponíveis</h2>
-          <a href="https://www.andvoid.store/commissions" target="_blank">Contact me</a>
+        <div class="card secondary" onclick=accessStore("https://www.andvoid.store/loja")>
+          <h1 id="local-store-title"></h1>
+          <h2 id="local-store-subtitle"></h2>
+          <h3 id="local-store-description"></h3>
         </div>
 
         <footer class="page-footer">
@@ -61,11 +55,8 @@
   </div>
 
         
-    <script>
-        function goTo(url) {
-          window.open(url);
-        }
-    </script>
+  <script id="database" src="assets\data\database.js"></script>
+  <script id="index" src="assets\data\index.js"></script>
 
   </body>
 </html>

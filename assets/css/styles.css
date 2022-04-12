@@ -1,3 +1,10 @@
+:root {
+    --primary: #F55272;
+    --secondary: #BE235B;
+    --fill: rgb(255,255,255, 0.65);
+    --text-color: white;
+  }
+
 html {
     background-size: 100%;
     background-repeat: no-repeat;
@@ -6,6 +13,8 @@ html {
     padding: 0;
     margin: 0;
 }
+
+
 
 
 
@@ -38,8 +47,10 @@ h1 {
 }
 
 h2 {
-    font-weight: 400;
+    font-weight: 500;
+    line-height: 1.3em;
     font-size: 1.0em;
+    color: var(--secondary);
 }
 
 h3 {
@@ -47,36 +58,45 @@ h3 {
     font-size: 0.8em;
 }
 
+h4 {
+    font-size: 1.25em;
+}
+
+p {
+    font-weight: 600;
+    font-size: 1em;
+}
+
 a {
     margin: 0;
-    padding: 0 16px;
-    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border-radius: 20px;
     color: white;
-    background-color: #4D7AD9;
+    background-color: var(--primary);
     text-decoration: none;
     box-sizing: border-box;
     white-space: nowrap;
-    line-height: 36px;
-    height: 36px;
+    line-height: 40px;
+    height: 40px;
 }
 
-a.red {
-    background-color: #FF0000;
-}
-
-a.red:hover {
-    background-color: #ee4141;
+a.secondary {
+    background-color: var(--fill);
+    color: var(--primary);
+    border: 1px solid var(--primary);
 }
 
 a:hover {
-    background-color: #7594d6;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.20);
 }
 
 .container  {
     padding: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.65);
     border-radius: 20px;
-    max-width: 450px;
+    max-width: 335px;
     width: 90%;
     display: block;
     margin: auto;
@@ -89,14 +109,12 @@ a:hover {
 
 .container .page-header {
     display: flex;
-    border-bottom: 1px solid #C4C4C4;
-    padding-bottom: 12px;
-    margin-bottom: 20px;
 }
 
 .container .page-header .avatar {
     margin-right: 16px;
     height: fit-content;
+    width: 80px;
 }
 
 .container .page-header .profile-data {
@@ -117,10 +135,23 @@ a:hover {
 
 .container .cover-letter {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--primary);
+}
+
+.container .cover-letter a {
+    margin-top: 8px;
 }
 
 .container .cover-letter > h4 {
+    margin-bottom: 8px;
+}
+
+.container .cover-letter > p {
     margin-bottom: 8px;
 }
 
@@ -131,23 +162,54 @@ a:hover {
 
 .container .card {
     padding: 20px;
-    background-color: #ECECEC;
-    border-radius: 8px;
+    background-color: var(--primary);
+    border-radius: 20px;
     text-align: center;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     margin-top: 8px;
+    cursor: pointer;
 }
 
-.container .card h1, .container .card h2 {
+.container .card:hover {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.20);
+}
+
+
+.container .card.secondary {
+    background-color: var(--fill);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.container .card h1, .container .card h2, .container .card h3 {
+    color: var(--text-color);
+}
+
+.container .card h3 {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.container .card h1 {
     text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.container .card.secondary h1, .container .card.secondary h2 {
+    color: var(--primary);
+}
+
+.container .card.secondary h3 {
+    color: black;
+    font-size: 0.9em;
+    font-style: italic;
 }
 
 .container .card a {
-    margin-top: 16px;
+    margin-top: 8px;
     max-width: 160px;
     width: 100%;
     line-height: 48px;
