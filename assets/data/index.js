@@ -26,7 +26,7 @@ function accessLink(url) {
 
 function populatePage(userLanguage){
 
-    console.log(userLanguage)
+    // console.log(userLanguage)
 
     if (userLanguage != 'pt-BR') {
         printData(language.english)
@@ -39,12 +39,13 @@ function populatePage(userLanguage){
 }
 
 function printData(language){
-    console.log("printData")
+    // console.log("printData")
     document.getElementById("email").innerHTML=language.email;
     document.getElementById("role").innerHTML=language.role;
     document.getElementById("role-description").innerHTML=language.roleDescription;
     document.getElementById("portfolio-action").innerHTML=language.portfolioAction;
     document.getElementById("commission-action").innerHTML=language.commissionAction;
+    document.getElementById("youtube-action").innerHTML=language.youtubeAction;
     document.getElementById("spring-store-title").innerHTML=language.springStoreTitle;
     document.getElementById("spring-store-subtitle").innerHTML=language.springStoreSubtitle;
     document.getElementById("spring-store-description").innerHTML=language.springStoreDescription;
