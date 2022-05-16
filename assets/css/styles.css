@@ -2,7 +2,7 @@
     --primary: #c55252;
     --secondary:  #356298;
     --bg-color: #a94e4e;
-    --fill: rgb(255,255,255, 0.05);
+    --fill: rgb(255,255,255, 0.70);
     --text-color: white;
     --bg-image: url("../images/background.png")
   }
@@ -76,6 +76,7 @@ a {
     text-transform: uppercase;
     /* border-radius: 20px; */
     color: white;
+    cursor: pointer;
     background-color: var(--primary);
     text-decoration: none;
     box-sizing: border-box;
@@ -216,6 +217,10 @@ a:hover {
     width: 100%;
     line-height: 48px;
     height: 48px;
+}
+
+#myInput {
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {

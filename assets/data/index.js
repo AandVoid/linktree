@@ -46,6 +46,7 @@ function printData(language){
     document.getElementById("portfolio-action").innerHTML=language.portfolioAction;
     document.getElementById("commission-action").innerHTML=language.commissionAction;
     document.getElementById("youtube-action").innerHTML=language.youtubeAction;
+    document.getElementById("instagram-action").innerHTML=language.instagramAction;
     document.getElementById("spring-store-title").innerHTML=language.springStoreTitle;
     document.getElementById("spring-store-subtitle").innerHTML=language.springStoreSubtitle;
     document.getElementById("spring-store-description").innerHTML=language.springStoreDescription;
