@@ -6,24 +6,6 @@ var userLanguage = window.navigator.userLanguage || window.navigator.language;
 window.onload = () => populatePage(userLanguage);
 
 
-//Copy Email
-function myFunction() {
-    var copyText = language.english.email
-    navigator.clipboard.writeText(copyText); 
-    var tooltip = document.getElementById("commission-action");
-    tooltip.innerHTML = "🐸🐸 Copied e-mail address 🐸🐸";
-}
-
-function outFunc() {
-    var tooltip = document.getElementById("commission-action");
-    setTimeout(() => { tooltip.innerHTML = populatePage(userLanguage).commissionAction; }, 2000);
-}
-
-function accessLink(url) {
-    window.open(url, '_blank').focus();
-}
-
-
 function populatePage(userLanguage){
 
     // console.log(userLanguage)

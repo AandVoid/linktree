@@ -4,6 +4,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" type="image/ico" href="assets/images/logo-title.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
     <meta name="theme-color" content="#5300c7" />
@@ -29,16 +32,14 @@
           <h4 id="role"></h4>
           <p id="role-description"></p>
           <a href="https://www.artstation.com/andvoid" target="_blank" id="portfolio-action"></a>
-          
-          <input type="text" value= "{() => language.email}" id="myInput" style="display: none;">
-          <a class="secondary" onclick="myFunction()" onmouseout="outFunc()" id="commission-action"></a>
+          <a class="secondary" href="https://www.andvoid.store/commissions" target="_blank" id="commission-action"></a>
           <a class="secondary" href="https://www.youtube.com/channel/UCz1IT9-TLF7RUXXYc0465Fg" target="_blank" id="youtube-action"></a>
           <a class="secondary" href="https://www.instagram.com/aand.void/" target="_blank" id="instagram-action"></a>
         </div>
 
         
 
-        <div class="card" onclick=accessLink("https://andvoid-store.creator-spring.com/")>
+        <div class="card primary" onclick=accessLink("https://andvoid-store.creator-spring.com/")>
           <h1 id="spring-store-title"></h1>
           <h2 id="spring-store-subtitle"></h2>
           <h3 id="spring-store-description"></h3>
