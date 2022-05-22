@@ -6,6 +6,10 @@ var userLanguage = window.navigator.userLanguage || window.navigator.language;
 window.onload = () => populatePage(userLanguage);
 
 
+function accessLink(url) {
+    window.open(url, '_blank').focus();
+}
+
 function populatePage(userLanguage){
 
     // console.log(userLanguage)
