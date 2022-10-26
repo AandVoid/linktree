@@ -29,11 +29,15 @@
     <div class="page">
       <div class="container">
         <header class="page-header">
-          <img class="avatar" src="assets/images/avatar.png" alt="Angry Frog Avatar"/>
+          
           <div class="profile-data">
-            <h1>AndVøid</h1>
-            <h2>@aand.void</h2>
-            <h2 id="email"></h2>
+            <img class="avatar" src="assets/images/dragon_head.png" alt="Dragon Avatar"/>
+            <div>
+              <h2 id="artBy"></h2>
+              <h1>AndVøid</h1>
+              <h2>@aand.void</h2>
+              <h3 id="email"></h3>
+            </div>
             
           </div>
         </header>
@@ -41,16 +45,23 @@
         <div class="cover-letter">
           <h4 id="role"></h4>
           <p id="role-description"></p>
-          <a href="https://www.andvoid.store" target="_blank" id="website-action"></a>
+          <a class="primary" href="https://www.andvoid.store" target="_blank" id="website-action"></a>
           <a class="secondary" href="https://www.andvoid.store/commissions" target="_blank" id="commission-action"></a>
           <a class="secondary" href="https://www.artstation.com/andvoid" target="_blank" id="portfolio-action"></a>
-          <a class="secondary" href="https://www.youtube.com/channel/UCz1IT9-TLF7RUXXYc0465Fg" target="_blank" id="youtube-action"></a>
-          <a class="secondary" href="https://www.instagram.com/aand.void/" target="_blank" id="instagram-action"></a>
+          <div class="social-media">
+            <a class="icon" id="youtube" href="https://www.youtube.com/channel/UCz1IT9-TLF7RUXXYc0465Fg" target="_blank" id="youtube-action">
+              <img src="assets/images/youtube-icon.png">
+            </a>
+            <a class="icon" href="https://www.instagram.com/aand.void/" target="_blank" id="instagram-action">
+              <img src="assets/images/instagram-icon.png">
+            </a>
+          </div>
+          
         </div>
 
         
 
-        <div class="card primary" onclick=accessLink("https://andvoid-store.creator-spring.com/")>
+        <!-- <div class="card primary" onclick=accessLink("https://andvoid-store.creator-spring.com/")>
           <h1 id="spring-store-title"></h1>
           <h2 id="spring-store-subtitle"></h2>
           <h3 id="spring-store-description"></h3>
@@ -60,7 +71,7 @@
           <h1 id="local-store-title"></h1>
           <h2 id="local-store-subtitle"></h2>
           <h3 id="local-store-description"></h3>
-        </div>
+        </div> -->
 
         <footer class="page-footer">
         </footer>

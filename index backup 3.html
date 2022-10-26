@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="assets/images/logo-title.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+    <meta name="theme-color" content="#5300c7" />
+    <title>AndVoid - Links</title>
+    <meta name="keywords" content="AndVoid, illustration, digital art, painting, draw, ukiyoe, cartoon, art">
+    <meta name="description" content="I'm a digital artist from Brazil. I work with a mix of ukiyo-e, comic book and street art styles">
+
+  </head>
+  <body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K7W338LV96"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-K7W338LV96');
+    </script>
+
+    <div class="page">
+      <div class="container">
+        <header class="page-header">
+          <img class="avatar" src="assets/images/avatar.png" alt="Angry Frog Avatar"/>
+          <div class="profile-data">
+            <h1>AndVøid</h1>
+            <h2>@aand.void</h2>
+            <h2 id="email"></h2>
+            
+          </div>
+        </header>
+
+        <div class="cover-letter">
+          <h4 id="role"></h4>
+          <p id="role-description"></p>
+          <a href="https://www.andvoid.store" target="_blank" id="website-action"></a>
+          <a class="secondary" href="https://www.andvoid.store/commissions" target="_blank" id="commission-action"></a>
+          <a class="secondary" href="https://www.artstation.com/andvoid" target="_blank" id="portfolio-action"></a>
+          <a class="secondary" href="https://www.youtube.com/channel/UCz1IT9-TLF7RUXXYc0465Fg" target="_blank" id="youtube-action"></a>
+          <a class="secondary" href="https://www.instagram.com/aand.void/" target="_blank" id="instagram-action"></a>
+        </div>
+
+        
+
+        <div class="card primary" onclick=accessLink("https://andvoid-store.creator-spring.com/")>
+          <h1 id="spring-store-title"></h1>
+          <h2 id="spring-store-subtitle"></h2>
+          <h3 id="spring-store-description"></h3>
+        </div>
+
+        <div class="card secondary" onclick=accessLink("https://www.andvoid.store/loja")>
+          <h1 id="local-store-title"></h1>
+          <h2 id="local-store-subtitle"></h2>
+          <h3 id="local-store-description"></h3>
+        </div>
+
+        <footer class="page-footer">
+        </footer>
+        
+      </div>
+  </div>
+
+        
+  <script id="database" src="assets\data\database.js"></script>
+  <script id="index" src="assets\data\index.js"></script>
+
+  </body>
+</html>

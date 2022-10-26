@@ -1,12 +1,13 @@
 const language = {
     "english": {
         "language": "english",
+        "artBy": "Art By",
         "title": "AndVøid",
         "email": "aandvoid@gmail.com",
         "role": "Digital artist from Brazil",
         "roleDescription": "I work with a mix of ukiyo-e, comic book and street art styles",
         "portfolioAction": "View Portfolio",
-        "commissionAction": "Commissions",
+        "commissionAction": "Commissions OPEN",
         "websiteAction": "My Website",
         "youtubeAction": "YouTube Channel",
         "instagramAction": "Instagram",
@@ -19,6 +20,7 @@ const language = {
     },
     "portuguese": {
         "language": "portuguese",
+        "artBy": "Arte De",
         "title": "AndVøid",
         "email": "aandvoid@gmail.com",
         "role": "Artista Digital Brasileiro",
