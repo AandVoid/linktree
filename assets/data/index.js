@@ -33,6 +33,7 @@ function printData(language){
     document.getElementById("portfolio-action").innerHTML=language.portfolioAction;
     document.getElementById("commission-action").innerHTML=language.commissionAction;
     document.getElementById("website-action").innerHTML=language.websiteAction;
+    document.getElementById("store-action").innerHTML=language.storeAction;
     // document.getElementById("youtube-action").innerHTML=language.youtubeAction;
     // document.getElementById("instagram-action").innerHTML=language.instagramAction;
     // document.getElementById("spring-store-title").innerHTML=language.springStoreTitle;

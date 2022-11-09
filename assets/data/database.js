@@ -16,7 +16,9 @@ const language = {
         "springStoreDescription": "International Store",
         "localStoreTitle": "Local Online Store",
         "localStoreSubtitle": "Signed prints",
-        "localStoreDescription": "Delivered on Brazil only"
+        "localStoreDescription": "Delivered on Brazil only",
+        "storeAction": "My store"
+
     },
     "portuguese": {
         "language": "portuguese",
@@ -35,6 +37,7 @@ const language = {
         "springStoreDescription": "Loja Internacional",
         "localStoreTitle": "Loja online Local",
         "localStoreSubtitle": "Impressões A3 assinadas",
-        "localStoreDescription": "Entregas apenas no Brasil"
+        "localStoreDescription": "Entregas apenas no Brasil",
+        "storeAction": "Minha loja"
     },
 };
